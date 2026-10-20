@@ -1,0 +1,81 @@
+name: 测试反馈
+description: 填写使用体验（所有项均可选）
+title: "[反馈] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **隐私提示**：请勿粘贴录音、身份证、银行卡、手机号等个人信息；截图前请遮挡敏感内容。所有项均为选填。
+  - type: input
+    id: device
+    attributes:
+      label: 手机型号与 Android 版本
+      placeholder: 例如 Redmi K60，Android 14
+  - type: input
+    id: version
+    attributes:
+      label: App 版本
+  - type: checkboxes
+    id: apps
+    attributes:
+      label: 主要使用的 App
+      options:
+        - label: 抖音直播
+        - label: 抖音短视频
+        - label: 快手
+        - label: 微信视频号
+        - label: 其他
+  - type: dropdown
+    id: duration
+    attributes:
+      label: 用了多久
+      options: ["不到 1 天", "1–3 天", "4–7 天", "超过 1 周"]
+  - type: dropdown
+    id: got_alert
+    attributes:
+      label: 收到过提醒吗
+      options: ["收到过", "没有收到", "不确定"]
+  - type: checkboxes
+    id: accuracy
+    attributes:
+      label: 提醒准不准
+      options:
+        - label: 基本准确
+        - label: 误报（没问题却提醒）
+        - label: 漏报（有问题没提醒）
+        - label: 说不清
+  - type: dropdown
+    id: timing
+    attributes:
+      label: 提醒时间
+      options: ["及时", "晚了但还有用", "太晚没用"]
+  - type: dropdown
+    id: battery
+    attributes:
+      label: 耗电发热
+      options: ["没感觉", "略有", "明显", "严重"]
+  - type: dropdown
+    id: crash
+    attributes:
+      label: 卡顿闪退
+      options: ["没有", "偶尔卡顿", "经常卡顿", "出现过闪退"]
+  - type: dropdown
+    id: install
+    attributes:
+      label: 安装和下载模型
+      options: ["顺利", "有些困难但完成了", "没能完成"]
+  - type: dropdown
+    id: wording
+    attributes:
+      label: 说明文字是否看得懂
+      options: ["看得懂", "部分看不懂", "看不懂"]
+  - type: dropdown
+    id: recommend
+    attributes:
+      label: 是否愿意推荐给长辈
+      options: ["愿意", "不确定", "不愿意"]
+  - type: textarea
+    id: notes
+    attributes:
+      label: 问题或建议

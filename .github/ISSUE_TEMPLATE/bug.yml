@@ -1,0 +1,27 @@
+name: 问题报告
+description: 报告闪退、功能异常等问题
+title: "[问题] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **隐私提示**：请勿粘贴录音、身份证、银行卡、手机号等个人信息。
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+  - type: input
+    id: device
+    attributes:
+      label: 手机型号与 Android 版本
+  - type: input
+    id: version
+    attributes:
+      label: App 版本
