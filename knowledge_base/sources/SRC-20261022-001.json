@@ -1,0 +1,16 @@
+{
+  "id": "SRC-20261022-001",
+  "type": "wechat_article",
+  "url": "https://mp.weixin.qq.com/s/Coj7_Jxi8shzW8M2DTEuRg",
+  "title": null,
+  "publisher": null,
+  "published_at": null,
+  "collected_at": "2026-10-22",
+  "submitted_by": "project_owner",
+  "access_status": "content_unavailable",
+  "review_status": "pending_content",
+  "provenance_note": "微信文章链接由项目维护者提供；当前工具无法读取文章正文，未核验发布者、标题、发布日期或文章中的任何主张。",
+  "claims_extracted": [],
+  "privacy_review": "pending",
+  "license_note": "Do not store or republish the full article without rights review."
+}

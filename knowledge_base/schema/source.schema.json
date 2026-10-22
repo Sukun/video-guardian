@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Anti-fraud source intake schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "url",
+    "title",
+    "publisher",
+    "published_at",
+    "collected_at",
+    "submitted_by",
+    "access_status",
+    "review_status",
+    "provenance_note",
+    "claims_extracted",
+    "privacy_review",
+    "license_note"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{8}-[0-9]{3}$"
+    },
+    "type": {
+      "enum": [
+        "wechat_article",
+        "official_publication",
+        "media_report",
+        "research",
+        "other"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "collected_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "submitted_by": {
+      "type": "string"
+    },
+    "access_status": {
+      "enum": [
+        "content_unavailable",
+        "accessible",
+        "archived"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "pending_content",
+        "pending_human_approval",
+        "verified",
+        "rejected",
+        "superseded"
+      ]
+    },
+    "provenance_note": {
+      "type": "string"
+    },
+    "claims_extracted": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "privacy_review": {
+      "enum": [
+        "pending",
+        "passed",
+        "not_required",
+        "blocked"
+      ]
+    },
+    "license_note": {
+      "type": "string"
+    }
+  }
+}
