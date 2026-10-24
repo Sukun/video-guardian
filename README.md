@@ -25,7 +25,7 @@
 
 开发者：程苏堃；公开联系邮箱：video_guardian@126.com。
 
-[隐私政策（2026-10-24修订开发版）](https://Sukun.github.io/video-guardian/privacy.html)；网页文件已上传，首次访问须等待 GitHub Pages 启用和部署。该说明对应尚未替换旧发布包的开发版，旧 APK 行为请按其对应版本核对。
+[隐私政策（2026-10-24修订开发版）](https://Sukun.github.io/video-guardian/privacy.html)。该说明对应尚未替换旧发布包的开发版，旧 APK 行为请按其对应版本核对。
 
 默认是本地模式：声音和识别出的文字只在手机本机处理，不上传；录音不保存。
 
